@@ -12,5 +12,5 @@ namespace: payment-service-dev
 project: payment-service-dev
 repoURL: https://github.com/Younesic/platform-gitops.git
 revision: main
-path: apps/templates/hello
+appPath: apps/templates/hello
 ```
