@@ -18,7 +18,6 @@ config:
   APP_COLOR: "blue"
   FEATURE_X_ENABLED: "true"
 sealedSecret:
-  name: app-secret
   encryptedData:
     API_KEY: "REPLACE_WITH_SEALED_VALUE"
     DB_URL: "REPLACE_WITH_SEALED_VALUE"
@@ -26,3 +25,6 @@ sealedSecret:
 
 Contenu minimum côté dev :
 - `apps/dev/payment/app.yaml`
+
+Note: le SealedSecret est toujours créé avec le nom final `{{name}}-app-secret` (namePrefix),
+donc il faut chiffrer avec ce nom exact.
