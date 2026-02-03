@@ -10,7 +10,8 @@ Exemple:
 name: payment-service-dev-app-v1
 namespace: payment-service-dev
 project: payment-service-dev
-repoURL: https://github.com/Younesic/platform-gitops.git
-revision: main
-appPath: apps/templates/hello
+template: webapp
+imageName: nginx
+imageTag: "1.27"
+replicas: 1
 ```
