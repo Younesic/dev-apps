@@ -1,9 +1,9 @@
 # dev-apps
 
-Repo des équipes dev. Contient uniquement un fichier `config.yaml` par app/environnement.
+Repo des équipes dev. Contient uniquement un fichier `app.yaml` par app/environnement.
 
 Structure:
-- apps/dev/<app>/config.yaml
+- apps/dev/<app>/app.yaml
 
 Exemple:
 ```yaml
@@ -17,7 +17,12 @@ config:
   APP_MESSAGE: "hello payment dev"
   APP_COLOR: "blue"
   FEATURE_X_ENABLED: "true"
+sealedSecret:
+  name: app-secret
+  encryptedData:
+    API_KEY: "REPLACE_WITH_SEALED_VALUE"
+    DB_URL: "REPLACE_WITH_SEALED_VALUE"
 ```
 
 Contenu minimum côté dev :
-- `apps/dev/payment/config.yaml`
+- `apps/dev/payment/app.yaml`

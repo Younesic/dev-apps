@@ -8,3 +8,8 @@ config:
   APP_MESSAGE: "hello payment dev"
   APP_COLOR: "blue"
   FEATURE_X_ENABLED: "true"
+sealedSecret:
+  name: app-secret
+  encryptedData:
+    API_KEY: "JKFJSDKJFSKLDJFLKSDJFKLDSJFKLDSJFKLSDJFLKSDJFKLSDJFE"
+    DB_URL: "postgres://user:password@localhost:5432/paymentdb"
